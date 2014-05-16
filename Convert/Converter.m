@@ -3,7 +3,7 @@
 #import "FMPSD.h"
 #import "FMPSDLayer.h"
 
-static CGRect CGRectFromString(NSString *string) {
+static CGRect CGRectFromString(NSString *string, CGFloat scale) {
     // {{35, 159}, {250, 250}}
     NSScanner *scanner = [[NSScanner alloc] initWithString:string];
     CGRect frame;
@@ -16,6 +16,8 @@ static CGRect CGRectFromString(NSString *string) {
     [scanner scanDouble:&frame.size.width];
     [scanner scanString:@", " intoString:nil];
     [scanner scanDouble:&frame.size.height];
+
+    frame = CGRectApplyAffineTransform(frame, CGAffineTransformMakeScale(scale, scale));
 
     return frame;
 }
@@ -47,10 +49,13 @@ static CGRect CGRectFromString(NSString *string) {
         return;
     }
 
-    CGRect mainWindowBounds = CGRectFromString([windows objectAtIndex:0][@"bounds"]);
+    NSDictionary *mainWindow = [windows objectAtIndex:0];
+    CGRect mainWindowBounds = CGRectFromString(mainWindow[@"bounds"], 2.0);
 
     psd.height = mainWindowBounds.size.height;
     psd.width = mainWindowBounds.size.width;
+    psd.depth = 8;
+    psd.colorMode = FMPSDRGBMode;
     self.psd = psd;
 
     for (NSDictionary *window in [windows reverseObjectEnumerator]) {
@@ -61,7 +66,7 @@ static CGRect CGRectFromString(NSString *string) {
 }
 
 - (void)dumpLayer:(NSDictionary *)layer {
-    CGRect frame = CGRectFromString(layer[@"frame"]);
+    CGRect frame = CGRectFromString(layer[@"frame"], 2.0);
     FMPSDLayer *psdLayer = [FMPSDLayer layerWithSize:frame.size psd:self.psd];
     NSData *snapshotData = layer[@"snapshot"];
     CGDataProviderRef dataProvider = CGDataProviderCreateWithCFData((__bridge CFDataRef)snapshotData);
