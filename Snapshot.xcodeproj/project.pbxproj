@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9F2B9619265982004CD32F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE3191E19263994009CED9E /* Foundation.framework */; };
+		2B9F2B9919265982004CD32F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2B9819265982004CD32F /* main.m */; };
+		2B9F2BB019265A47004CD32F /* FMPSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BA319265A47004CD32F /* FMPSD.m */; };
+		2B9F2BB119265A47004CD32F /* FMPSDCIFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BA519265A47004CD32F /* FMPSDCIFilters.m */; };
+		2B9F2BB219265A47004CD32F /* FMPSDDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BA719265A47004CD32F /* FMPSDDescriptor.m */; };
+		2B9F2BB319265A47004CD32F /* FMPSDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BA919265A47004CD32F /* FMPSDLayer.m */; };
+		2B9F2BB419265A47004CD32F /* FMPSDStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BAB19265A47004CD32F /* FMPSDStream.m */; };
+		2B9F2BB519265A47004CD32F /* FMPSDTextEngineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BAD19265A47004CD32F /* FMPSDTextEngineParser.m */; };
+		2B9F2BB619265A47004CD32F /* FMPSDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BAF19265A47004CD32F /* FMPSDUtils.m */; };
+		2B9F2BB919265AD2004CD32F /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F2BB819265AD2004CD32F /* Converter.m */; };
 		2BE3191F19263994009CED9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE3191E19263994009CED9E /* Foundation.framework */; };
 		2BE3192119263994009CED9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE3192019263994009CED9E /* CoreGraphics.framework */; };
 		2BE3192319263994009CED9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE3192219263994009CED9E /* UIKit.framework */; };
@@ -20,7 +30,37 @@
 		2BE3196019264212009CED9E /* UIKonf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3195F19264212009CED9E /* UIKonf.jpg */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2B9F2B9319265982004CD32F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2B9F2B9519265982004CD32F /* Convert */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Convert; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B9F2B9819265982004CD32F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B9F2BA219265A47004CD32F /* FMPSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMPSD.h; path = fmpsd/fmpsd/classes/FMPSD.h; sourceTree = "<group>"; };
+		2B9F2BA319265A47004CD32F /* FMPSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPSD.m; path = fmpsd/fmpsd/classes/FMPSD.m; sourceTree = "<group>"; };
+		2B9F2BA419265A47004CD32F /* FMPSDCIFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMPSDCIFilters.h; path = fmpsd/fmpsd/classes/FMPSDCIFilters.h; sourceTree = "<group>"; };
+		2B9F2BA519265A47004CD32F /* FMPSDCIFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPSDCIFilters.m; path = fmpsd/fmpsd/classes/FMPSDCIFilters.m; sourceTree = "<group>"; };
+		2B9F2BA619265A47004CD32F /* FMPSDDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMPSDDescriptor.h; path = fmpsd/fmpsd/classes/FMPSDDescriptor.h; sourceTree = "<group>"; };
+		2B9F2BA719265A47004CD32F /* FMPSDDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPSDDescriptor.m; path = fmpsd/fmpsd/classes/FMPSDDescriptor.m; sourceTree = "<group>"; };
+		2B9F2BA819265A47004CD32F /* FMPSDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMPSDLayer.h; path = fmpsd/fmpsd/classes/FMPSDLayer.h; sourceTree = "<group>"; };
+		2B9F2BA919265A47004CD32F /* FMPSDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPSDLayer.m; path = fmpsd/fmpsd/classes/FMPSDLayer.m; sourceTree = "<group>"; };
+		2B9F2BAA19265A47004CD32F /* FMPSDStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMPSDStream.h; path = fmpsd/fmpsd/classes/FMPSDStream.h; sourceTree = "<group>"; };
+		2B9F2BAB19265A47004CD32F /* FMPSDStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPSDStream.m; path = fmpsd/fmpsd/classes/FMPSDStream.m; sourceTree = "<group>"; };
+		2B9F2BAC19265A47004CD32F /* FMPSDTextEngineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMPSDTextEngineParser.h; path = fmpsd/fmpsd/classes/FMPSDTextEngineParser.h; sourceTree = "<group>"; };
+		2B9F2BAD19265A47004CD32F /* FMPSDTextEngineParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPSDTextEngineParser.m; path = fmpsd/fmpsd/classes/FMPSDTextEngineParser.m; sourceTree = "<group>"; };
+		2B9F2BAE19265A47004CD32F /* FMPSDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMPSDUtils.h; path = fmpsd/fmpsd/classes/FMPSDUtils.h; sourceTree = "<group>"; };
+		2B9F2BAF19265A47004CD32F /* FMPSDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPSDUtils.m; path = fmpsd/fmpsd/classes/FMPSDUtils.m; sourceTree = "<group>"; };
+		2B9F2BB719265AD2004CD32F /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		2B9F2BB819265AD2004CD32F /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
 		2BE3191B19263994009CED9E /* Snapshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE3191E19263994009CED9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BE3192019263994009CED9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -42,6 +82,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B9F2B9219265982004CD32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9F2B9619265982004CD32F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BE3191819263994009CED9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +103,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B9F2B9719265982004CD32F /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				2B9F2BA119265A2F004CD32F /* fmpsd */,
+				2B9F2B9819265982004CD32F /* main.m */,
+				2B9F2BB719265AD2004CD32F /* Converter.h */,
+				2B9F2BB819265AD2004CD32F /* Converter.m */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		2B9F2BA119265A2F004CD32F /* fmpsd */ = {
+			isa = PBXGroup;
+			children = (
+				2B9F2BA219265A47004CD32F /* FMPSD.h */,
+				2B9F2BA319265A47004CD32F /* FMPSD.m */,
+				2B9F2BA419265A47004CD32F /* FMPSDCIFilters.h */,
+				2B9F2BA519265A47004CD32F /* FMPSDCIFilters.m */,
+				2B9F2BA619265A47004CD32F /* FMPSDDescriptor.h */,
+				2B9F2BA719265A47004CD32F /* FMPSDDescriptor.m */,
+				2B9F2BA819265A47004CD32F /* FMPSDLayer.h */,
+				2B9F2BA919265A47004CD32F /* FMPSDLayer.m */,
+				2B9F2BAA19265A47004CD32F /* FMPSDStream.h */,
+				2B9F2BAB19265A47004CD32F /* FMPSDStream.m */,
+				2B9F2BAC19265A47004CD32F /* FMPSDTextEngineParser.h */,
+				2B9F2BAD19265A47004CD32F /* FMPSDTextEngineParser.m */,
+				2B9F2BAE19265A47004CD32F /* FMPSDUtils.h */,
+				2B9F2BAF19265A47004CD32F /* FMPSDUtils.m */,
+			);
+			name = fmpsd;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		2BE3191219263994009CED9E = {
 			isa = PBXGroup;
 			children = (
 				2BE3192419263994009CED9E /* Snapshot */,
+				2B9F2B9719265982004CD32F /* Convert */,
 				2BE3191D19263994009CED9E /* Frameworks */,
 				2BE3191C19263994009CED9E /* Products */,
 			);
@@ -70,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				2BE3191B19263994009CED9E /* Snapshot.app */,
+				2B9F2B9519265982004CD32F /* Convert */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +199,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2B9F2B9419265982004CD32F /* Convert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B9F2BA019265982004CD32F /* Build configuration list for PBXNativeTarget "Convert" */;
+			buildPhases = (
+				2B9F2B9119265982004CD32F /* Sources */,
+				2B9F2B9219265982004CD32F /* Frameworks */,
+				2B9F2B9319265982004CD32F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Convert;
+			productName = Convert;
+			productReference = 2B9F2B9519265982004CD32F /* Convert */;
+			productType = "com.apple.product-type.tool";
+		};
 		2BE3191A19263994009CED9E /* Snapshot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BE3194719263994009CED9E /* Build configuration list for PBXNativeTarget "Snapshot" */;
@@ -155,6 +255,7 @@
 			projectRoot = "";
 			targets = (
 				2BE3191A19263994009CED9E /* Snapshot */,
+				2B9F2B9419265982004CD32F /* Convert */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +274,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B9F2B9119265982004CD32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9F2BB019265A47004CD32F /* FMPSD.m in Sources */,
+				2B9F2BB519265A47004CD32F /* FMPSDTextEngineParser.m in Sources */,
+				2B9F2BB619265A47004CD32F /* FMPSDUtils.m in Sources */,
+				2B9F2BB219265A47004CD32F /* FMPSDDescriptor.m in Sources */,
+				2B9F2BB119265A47004CD32F /* FMPSDCIFilters.m in Sources */,
+				2B9F2BB319265A47004CD32F /* FMPSDLayer.m in Sources */,
+				2B9F2BB919265AD2004CD32F /* Converter.m in Sources */,
+				2B9F2BB419265A47004CD32F /* FMPSDStream.m in Sources */,
+				2B9F2B9919265982004CD32F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BE3191719263994009CED9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +305,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2B9F2B9E19265982004CD32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2B9F2B9F19265982004CD32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		2BE3194519263994009CED9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -285,6 +427,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B9F2BA019265982004CD32F /* Build configuration list for PBXNativeTarget "Convert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9F2B9E19265982004CD32F /* Debug */,
+				2B9F2B9F19265982004CD32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		2BE3191619263994009CED9E /* Build configuration list for PBXProject "Snapshot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -301,6 +451,7 @@
 				2BE3194919263994009CED9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

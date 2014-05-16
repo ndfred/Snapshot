@@ -1,0 +1,3 @@
+[submodule "fmpsd"]
+	path = fmpsd
+	url = git@github.com:ccgus/fmpsd.git
